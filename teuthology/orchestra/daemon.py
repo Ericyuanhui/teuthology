@@ -78,7 +78,7 @@ class DaemonState(object):
                 run.Raw("{'print $2'}")]
         proc = self.remote.run(args=args, stdout=StringIO())
         pid_string = proc.stdout.getvalue().strip()
-        if not isdigit(pid_string):
+        if not pid_string.isdigit():
             return None
         return int(pid_string)
 

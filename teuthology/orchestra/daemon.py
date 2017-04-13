@@ -77,7 +77,10 @@ class DaemonState(object):
                 'awk',
                 run.Raw("{'print $2'}")]
         proc = self.remote.run(args=args, stdout=StringIO())
-        return int(proc.stdout.getvalue().strip())
+        pid_string = proc.stdout.getvalue().strip()
+        if not isdigit(pid_string):
+            return None
+        return int(pid_string)
 
     def stop(self, timeout=300):
         """

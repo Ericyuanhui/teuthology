@@ -1,1 +1,0 @@
-# Teuthology Detail Setup Notes

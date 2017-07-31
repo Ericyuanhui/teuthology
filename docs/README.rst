@@ -63,11 +63,11 @@ Infrastructure
 The examples in this document are based on the lab machine configuration used
 by the Red Hat Ceph development and quality assurance teams
 (see: `lab_setup`_). Other instances of a Ceph Lab being used in a
-development or testing environment may differ from these examples(see: `Detail_SETUP`_).
+development or testing environment may differ from these examples(see: `lab_setup_Q&A`_).
 
 .. _lab_setup: ./LAB_SETUP.rst
 
-.. _Detail_SETUP: ./Detail_SETUP.md
+.. _lab_setup_Q&A: ./LAB_SETUP.rst
 
 Detailed test configuration
 ===========================
